@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home">
       <header style={{ backgroundImage: `url(${header})` }}></header>
       <main>
-        <section className="section1"></section>
+        <section className="section1 bordered"></section>
         <section className="section2"></section>
         <section className="section3"></section>
         <section className="section4"></section>

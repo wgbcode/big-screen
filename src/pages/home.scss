@@ -17,8 +17,27 @@
     grid-row-gap: px(28);
     padding-top: px(30);
     margin: 0 px(25);
+    .bordered {
+      border: 1px solid #0764bc;
+      border-radius: 4px;
+      background: #0f113a;
+      box-shadow: 0 0 2px 0 #0e325f, inset 0 0 2px 0 #0e325f;
+      position: relative;
+      &::after {
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        content: "";
+        border-radius: 4px;
+        box-shadow: 17px 0 0 -16px #0e325f, -17px 0 0 -16px #0e325f,
+          0 17px 0 -16px #0e325f, 0 -17px 0 -16px #0e325f, 9px 0 0 -8px #0d4483,
+          -9px 0 0 -8px #0d4483, 0 9px 0 -8px #0d4483, 0 -9px 0 -8px #0d4483;
+      }
+    }
     .section1 {
-      border: 1px solid red;
       grid-area: box1;
     }
     .section2 {
