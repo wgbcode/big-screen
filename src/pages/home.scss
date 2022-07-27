@@ -1,8 +1,44 @@
 @import "../shared/_helper.scss";
 .home {
+  flex: 1;
+  @include flexColumn;
   header {
     height: px(99);
     width: px(2420);
     background-size: cover;
+  }
+  main {
+    flex: 1;
+    display: grid;
+    grid-template:
+      "box1 box2 box4 box5" 755fr
+      "box3 box3 box4 box5" 363fr / 366fr 361fr 811fr 747fr;
+    grid-column-gap: px(28);
+    grid-row-gap: px(28);
+    padding-top: px(30);
+    margin: 0 px(25);
+    .section1 {
+      border: 1px solid red;
+      grid-area: box1;
+    }
+    .section2 {
+      //   border: 1px solid red;
+      grid-area: box2;
+    }
+    .section3 {
+      //   border: 1px solid red;
+      grid-area: box3;
+    }
+    .section4 {
+      //   border: 1px solid red;
+      grid-area: box4;
+    }
+    .section5 {
+      //   border: 1px solid red;
+      grid-area: box5;
+    }
+  }
+  footer {
+    height: px(68);
   }
 }
