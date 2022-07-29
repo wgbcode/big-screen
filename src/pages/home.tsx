@@ -4,6 +4,7 @@ import "./home.scss";
 
 import { Chart1 } from "../components/chart-1";
 import { Chart2 } from "../components/chart-2";
+import { Chart3 } from "../components/chart-3";
 
 const Home = () => {
   return (
@@ -14,7 +15,9 @@ const Home = () => {
           <Chart1 />
           <Chart2 />
         </section>
-        <section className="section2"></section>
+        <section className="section2">
+          <Chart3 />
+        </section>
         <section className="section3"></section>
         <section className="section4"></section>
         <section className="section5"></section>
