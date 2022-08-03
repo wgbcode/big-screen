@@ -75,6 +75,7 @@ export const Chart3 = () => {
         },
       ].map((obj) => ({
         ...obj,
+        // 图形节点标记
         symbol: "circle",
         symbolSize: px(12),
         lineStyle: { width: px(2) },

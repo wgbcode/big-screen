@@ -1,7 +1,8 @@
 @mixin chart {
   .管辖统计,
   .破获排名,
-  .发案趋势 {
+  .发案趋势,
+  .案发时段 {
     height: px(315);
     @include flexColumn;
     align-items: center;
@@ -23,7 +24,6 @@
   }
   .破获排名 {
     height: px(423);
-    margin-top: px(20);
     .legend {
       display: flex;
       align-items: center;
@@ -48,7 +48,8 @@
       }
     }
   }
-  .发案趋势 {
-    height: px(363);
+  .发案趋势,
+  .案发时段 {
+    height: px(369);
   }
 }

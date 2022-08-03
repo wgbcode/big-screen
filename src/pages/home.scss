@@ -39,15 +39,17 @@
       }
     }
     .section1 {
-      //   border: 1px solid red;
       grid-area: box1;
+      @include flexColumn;
+      justify-content: space-between;
     }
     .section2 {
-      border: 1px solid red;
       grid-area: box2;
+      @include flexColumn;
+      justify-content: space-between;
     }
     .section3 {
-      //   border: 1px solid red;
+      border: 1px solid red;
       grid-area: box3;
     }
     .section4 {
