@@ -2,7 +2,8 @@
   .管辖统计,
   .破获排名,
   .发案趋势,
-  .案发时段 {
+  .案发时段,
+  .战果 {
     height: px(315);
     @include flexColumn;
     align-items: center;
@@ -51,5 +52,34 @@
   .发案趋势,
   .案发时段 {
     height: px(369);
+  }
+  .战果 {
+    padding: 0 px(24);
+    table {
+      width: 100%;
+      margin-top: px(25);
+      font-size: px(14);
+      color: #d4d5e1;
+      text-align: center;
+      table-layout: fixed;
+      border-collapse: collapse;
+      th,
+      td {
+        border: 1px solid #1a3671;
+      }
+      thead {
+        th {
+          height: px(70);
+          box-shadow: inset 0 0 px(60) 0 #1f3d85;
+        }
+      }
+      tbody {
+        td {
+          height: px(50);
+          width: px(84);
+          background: #1c2456;
+        }
+      }
+    }
   }
 }
