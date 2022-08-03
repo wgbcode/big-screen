@@ -40,23 +40,21 @@
     }
     .section1 {
       grid-area: box1;
-      @include flexColumn;
-      justify-content: space-between;
+      @include flexColumnBetween;
     }
     .section2 {
       grid-area: box2;
-      @include flexColumn;
-      justify-content: space-between;
+      @include flexColumnBetween;
     }
     .section3 {
       grid-area: box3;
     }
     .section4 {
-      border: 1px solid red;
       grid-area: box4;
+      @include flexColumnBetween;
     }
     .section5 {
-      //   border: 1px solid red;
+      // border: 1px solid red;
       grid-area: box5;
     }
   }
