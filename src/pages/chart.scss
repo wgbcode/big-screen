@@ -36,7 +36,8 @@
   .籍贯,
   .年龄段,
   .案发类型,
-  .案发街道 {
+  .案发街道,
+  .作案手段 {
     height: px(315);
     @include flexColumn;
     align-items: center;
@@ -158,7 +159,17 @@
   .案发时段 {
     height: px(369);
   }
-  .战果 {
+  .案发类型 {
+    height: px(329);
+  }
+  .案发街道 {
+    height: px(316);
+  }
+  .作案手段 {
+    height: px(455);
+  }
+  .战果,
+  .作案手段 {
     padding: 0 px(24);
     table {
       width: 100%;
@@ -176,6 +187,7 @@
         th {
           height: px(70);
           box-shadow: inset 0 0 px(60) 0 #1f3d85;
+          background: #293879;
         }
       }
       tbody {
@@ -183,6 +195,22 @@
           height: px(50);
           width: px(84);
           background: #1c2456;
+        }
+      }
+    }
+  }
+  .作案手段 {
+    table {
+      thead {
+        th {
+          height: px(55);
+          font-size: px(18);
+        }
+      }
+      tbody {
+        td {
+          height: px(27);
+          font-size: px(16);
         }
       }
     }
