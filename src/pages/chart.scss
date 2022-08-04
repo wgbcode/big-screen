@@ -7,12 +7,25 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-right: px(10);
+    justify-content: flex-start;
+    // border: 1px solid blue;
     span {
       display: inline-block;
       width: px(20);
       height: px(14);
       border-radius: px(2);
       margin: 0 px(10);
+    }
+    .wrapper {
+      display: flex;
+
+      .text {
+        padding: 0 px(25) 0 px(10);
+        color: #7b9bb9;
+        font-size: px(16);
+        @include flexCenter;
+        white-space: nowrap;
+      }
     }
   }
   .管辖统计,
@@ -21,7 +34,8 @@
   .案发时段,
   .战果,
   .籍贯,
-  .年龄段 {
+  .年龄段,
+  .案发类型 {
     height: px(315);
     @include flexColumn;
     align-items: center;
@@ -39,6 +53,7 @@
     .chart {
       width: 100%;
       flex: 1;
+      // border: 1px solid red;
     }
     .charts {
       width: 100%;
@@ -60,7 +75,6 @@
         display: flex;
         .main {
           flex: 1;
-          // border: 1px solid red;
         }
         .text {
           position: absolute;
@@ -76,21 +90,11 @@
       .legend {
         @extend %legend;
         padding: 0 0 0 px(25);
-        .wrapper {
-          display: flex;
-          .male {
-            background: #33a4fa;
-          }
-          .female {
-            background: #8d70f8;
-          }
-          .text {
-            padding: 0 px(25) 0 px(10);
-            color: #7b9bb9;
-            font-size: px(16);
-            @include flexCenter;
-            white-space: nowrap;
-          }
+        .male {
+          background: #33a4fa;
+        }
+        .female {
+          background: #8d70f8;
         }
       }
     }
@@ -105,6 +109,21 @@
         margin-top: px(6);
         text-align: center;
         padding-left: px(20);
+      }
+    }
+    .chart11 {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      .chart {
+        display: flex;
+        .main {
+          flex: 1;
+        }
+      }
+      .legend {
+        @extend %legend;
+        padding-left: px(40);
       }
     }
   }
@@ -143,7 +162,7 @@
     table {
       width: 100%;
       margin-top: px(25);
-      font-size: px(14);
+      font-size: px(18);
       color: #d4d5e1;
       text-align: center;
       table-layout: fixed;
