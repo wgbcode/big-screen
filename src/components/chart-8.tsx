@@ -20,12 +20,12 @@ export const Chart8 = () => {
           label: {
             show: true,
             position: "outside",
-            textStyle: { color: "#7b9bb9", fontSize: px(20) },
+            textStyle: { color: "#7b9bb9", fontSize: px(15) },
             formatter(options) {
               return options.value * 100 + "%";
             },
           },
-          labelLine: { show: false },
+          labelLine: { show: false, length: px(25), length2: px(0) },
           itemStyle: {
             borderColor: "#0F113A",
             borderWidth: px(4),

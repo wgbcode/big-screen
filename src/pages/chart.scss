@@ -36,24 +36,31 @@
       padding: px(10) px(28);
       text-shadow: 0 0 px(3) white;
     }
-    .charts {
-      width: 100%;
-      flex: 1;
-      display: flex;
-    }
     .chart {
       width: 100%;
       flex: 1;
     }
+    .charts {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      padding: px(25);
+      // border: 1px solid red;
+    }
     .年龄段-图1,
-    .年龄段-图2 {
+    .年龄段-图2,
+    .年龄段-图3 {
       flex: 1;
       @include flexColumn;
+    }
+    .年龄段-图1,
+    .年龄段-图2 {
       .chart {
         position: relative;
         display: flex;
         .main {
           flex: 1;
+          // border: 1px solid red;
         }
         .text {
           position: absolute;
@@ -61,14 +68,14 @@
           left: 50%;
           transform: translate(-50%, -50%);
           color: #33a4fa;
-          font-size: px(35);
+          font-size: px(25);
           text-shadow: 0 0 px(20) #33a4fa;
           font-weight: bold;
         }
       }
       .legend {
         @extend %legend;
-        padding: 0 0 px(10) px(25);
+        padding: 0 0 0 px(25);
         .wrapper {
           display: flex;
           .male {
@@ -85,6 +92,19 @@
             white-space: nowrap;
           }
         }
+      }
+    }
+    .年龄段-图3 {
+      border: 1px solid #08397d;
+      margin-left: px(20);
+      background: #0d0e32;
+      border-radius: 4px;
+      h3 {
+        font-size: px(18);
+        color: #7ab6db;
+        margin-top: px(6);
+        text-align: center;
+        padding-left: px(20);
       }
     }
   }

@@ -10,7 +10,7 @@ import { Chart5 } from "../components/chart-5";
 import { Chart6 } from "../components/chart-6";
 import { Chart7 } from "../components/chart-7";
 import { Chart8 } from "../components/chart-8";
-// import { Chart9 } from "../components/chart-9";
+import { Chart9 } from "../components/chart-9";
 
 const Home = () => {
   return (
@@ -35,7 +35,7 @@ const Home = () => {
             <div className="charts">
               <Chart7 />
               <Chart8 />
-              {/* <Chart9 />  */}
+              <Chart9 />
             </div>
           </div>
         </section>
