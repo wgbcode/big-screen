@@ -65,7 +65,7 @@ const Home = () => {
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer> &copy; 大屏可视化项目</footer>
     </div>
   );
 };

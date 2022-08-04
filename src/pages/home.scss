@@ -3,6 +3,7 @@
 .home {
   flex: 1;
   @include flexColumn;
+  background: #002866;
   header {
     height: px(99);
     width: px(2420);
@@ -60,6 +61,12 @@
   }
   footer {
     height: px(68);
+    @include flexCenter;
+    color: #305aae;
+    font-size: px(24);
+    background: #0d0e34;
+    margin-top: px(12);
+    border: 1px solid #0d2e5b;
   }
   @include chart;
 }
