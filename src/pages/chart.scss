@@ -1,7 +1,7 @@
 @import "../shared/_helper.scss";
 @mixin chart {
   %legend {
-    height: px(40);
+    height: px(60);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,11 +45,11 @@
       width: 100%;
       flex: 1;
     }
-    .年龄段-图1 {
+    .年龄段-图1,
+    .年龄段-图2 {
       flex: 1;
       @include flexColumn;
       .chart {
-        flex: 1;
         position: relative;
         display: flex;
         .main {
@@ -68,16 +68,22 @@
       }
       .legend {
         @extend %legend;
-        .male {
-          background: #33a4fa;
-        }
-        .female {
-          background: #8d70f8;
-        }
-        .text {
-          color: #7b9bb9;
-          font-size: px(12);
-          @include flexCenter;
+        padding: 0 0 px(10) px(25);
+        .wrapper {
+          display: flex;
+          .male {
+            background: #33a4fa;
+          }
+          .female {
+            background: #8d70f8;
+          }
+          .text {
+            padding: 0 px(25) 0 px(10);
+            color: #7b9bb9;
+            font-size: px(16);
+            @include flexCenter;
+            white-space: nowrap;
+          }
         }
       }
     }
@@ -172,7 +178,7 @@
           background: #1cecd9;
         }
         .text {
-          font-size: px(12);
+          font-size: px(16);
         }
       }
       .notes {

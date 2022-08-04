@@ -14,7 +14,7 @@ export const Chart7 = () => {
       series: [
         {
           type: "pie",
-          radius: ["75%", "90%"],
+          radius: ["75%", "60%"],
           avoidLabelOverlap: false,
           label: {
             show: true,
@@ -45,10 +45,14 @@ export const Chart7 = () => {
         <div className="text">性别</div>
       </div>
       <div className="legend">
-        <span className="male" />
-        <span className="text">男</span>
-        <span className="female" />
-        <span className="text">女</span>
+        <div className="wrapper">
+          <span className="male" />
+          <span className="text">男</span>
+        </div>
+        <div className="wrapper">
+          <span className="female" />
+          <span className="text">女</span>
+        </div>
       </div>
     </div>
   );
