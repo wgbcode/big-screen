@@ -54,8 +54,11 @@
       @include flexColumnBetween;
     }
     .section5 {
-      // border: 1px solid red;
       grid-area: box5;
+      .row2,
+      .row3 {
+        margin-top: px(28);
+      }
     }
   }
   footer {
