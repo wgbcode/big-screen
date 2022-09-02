@@ -1,12 +1,20 @@
 # 大屏可视化项目
 
-项目通过引入 EChart 图表的形式，实现了大屏数据动态显示的功能，使用到的技术栈包括 React、React-dom、TypeScript、Scss 等。
+该项目通过引入 ECharts 图表的方式实现了大屏数据可视化的需求，对不同规格的屏幕的适配问题给出了解决方案。
 
 ## 源码使用命令行
 
-- yarn clone SSHUrl
-- yarn install
-- yarn dev
+`yarn clone SSHUrl`
+
+`yarn install`
+
+`yarn dev`
+
+##项目开发主要过程##
+
+- 根据屏幕适配公式解决屏幕适配问题，将设计稿按比例还原到屏幕上。
+- 获取当前屏幕的宽度 width，设置根元素的 font-size，使 1rem = width/100。
+- 引入 ECharts 图表，配置组件参数和调整盒子样式，使之渲染到页面上。
 
 ## 注意事项
 
